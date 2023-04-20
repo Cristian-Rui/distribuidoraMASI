@@ -38,6 +38,9 @@ while (compra != "no") {
             subtotal = carrito(subtotal, 500000);
             infoCarrito(compra,subtotal);
             break;
+        default:
+            alert("En este momento no se encuentra disponible esa opcion");
+            break;
     }
     
     let seguirComprando = prompt("¿desea seguir comprando?")
