@@ -1,0 +1,72 @@
+/* estilos generales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+    font-family: 'Prompt', sans-serif;
+    font-weight: 400;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+body {
+    background-color: #929AAB;
+}
+
+h1 {
+    font-size: 0rem;
+    height: 0px;
+}
+
+/* estilos del header */
+header {
+    background-color: #EEEEEE;
+}
+
+.header__img {
+    height: 10vh;
+    width: auto;
+}
+
+
+
+/* estilos del main */
+main {
+    height: 100vh;
+}
+
+.mensaje_bienvenida {
+    height: 10vh;
+
+}
+
+.mensaje_bienvenida h2 {
+    font-weight: 600;
+    font-size: 2rem;
+    height: 10vh;
+    font-style: italic;
+    color: #393E46;
+}
+
+.card__home {
+    height: 30vh;
+}
+
+.beneficios__home {
+    background-color: #393E46;
+
+}
+
+.beneficios__home div {
+    height: 20vh;
+}
