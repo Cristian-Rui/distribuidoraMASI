@@ -1,10 +1,74 @@
-// let miPrimerVariable;
+const dbProductos = [
+    {
+        id: 1,
+        nombre: 'Johnnie Walker Blue Label',
+        tipo: 'whisky',
+        tamano: 750,
+        precio: 91079
+    },
 
-// miPrimerVariable = 50;
+    {
+        id: 2,
+        nombre: 'The Macallan 18 Double Cask Single Maltl',
+        tipo: 'whisky',
+        tamano: 700,
+        precio: 429900
+    },
+    {
+        id: 3,
+        nombre: 'APUNTES - Malbec Orgánico',
+        tipo: 'vino',
+        tamano: 750,
+        precio: 12500
+    },
+    {
+        id: 4,
+        nombre: 'APUNTES - Semillón Fumé',
+        tipo: 'vino',
+        tamano: 750,
+        precio: 12500
+    },
+    {
+        id: 5,
+        nombre: 'Copa de cristal para vino',
+        tipo: 'cristaleria',
+        tamano: 390,
+        precio: 7590
+    },
+    {
+        id: 6,
+        nombre: 'Vaso de cristal para whisky',
+        tipo: 'cristaleria',
+        tamano: 200,
+        precio: 3350
+    },
+];
 
-// console.log(miPrimerVariable);
+let edad = prompt("ingrese su edad:");
+let listaProductos = [];
+let carrito = [];
+let trueOrFalse = true;
 
-let edad = prompt("ingrese su edad:")
+class Producto {
+    constructor(id, nombre, tipo, tamano, precio) {
+        this.id = id;
+        this.nombre = nombre;
+        this.tipo = tipo;
+        this.tamano = tamano;
+        this.precio = precio;
+    }
+    iva() {
+        return this.precio * 0.21;
+    }
+}
+
+function pushProductos() {
+    for (const producto of dbProductos) {
+        listaProductos.push(new Producto(producto.id, producto.nombre, producto.tipo, producto.tamano, producto.precio))
+    }
+}
+
+pushProductos();
 
 while (edad < 18) {
     edad = prompt("ingrese nuevamente su edad:")
@@ -12,64 +76,46 @@ while (edad < 18) {
 
 alert("bienvenido a la pagina de distribuidora masi");
 
-// let compra = prompt("¿que desea comprar?: \nwhisky 1: $10000\nwhisky 2: $15000\nwhisky 3: $150000\nwhisky 4: $500000")
+function initProgram() {
+    while (trueOrFalse) {
+        let selectSeccion = prompt("¡BIENVENIDO A LA TIENDA ONLINE DE DISTRIBUIDORA MASI! \n ¿Qué quieres hacer? \n 1. Ver productos disponibles \n 2. Ver whiskis disponibles  \n 3. Ver vinos disponibles \n 4. Ver productos de cristaleria disponibles \n 5.Ordenar los productos por precio(Ascendente)\n 6. Ordenar los productos por precio(descendente) \n 7. Buscar productos \n 8. Comprar un producto \n 9. Salir")
+        switch (selectSeccion) {
+            case "1":
 
-// let subtotal = 0
+                break
+            case "2":
 
-// let carrito = (subtotal, x) => subtotal + x
+                break
+            case "3":
 
-// const infoCarrito = (compra,subtotal) => alert(`Se añadio 1(uno) ${compra} a tu carrito\nEl subtotal de tu compra es de $${subtotal}`);
+                break
+            case "4":
 
-// while (compra != "no") {
-//     switch (compra) {
-//         case "whisky 1":
-//             subtotal = carrito(subtotal,10000);
-//             infoCarrito(compra,subtotal);
-//             break;
-//         case "whisky 2":
-//             subtotal = carrito(subtotal, 15000);
-//             infoCarrito(compra,subtotal);
-//             break;
-//         case "whisky 3":
-//             subtotal = carrito(subtotal, 150000);
-//             infoCarrito(compra,subtotal);
-//             break;
-//         case "whisky 4":
-//             subtotal = carrito(subtotal, 500000);
-//             infoCarrito(compra,subtotal);
-//             break;
-//         default:
-//             alert("En este momento no se encuentra disponible esa opcion");
-//             break;
-//     }
+                break
+            case "5":
 
-//     let seguirComprando = prompt("¿desea seguir comprando?")
-//     if (seguirComprando == "si"){
-//         compra = prompt("¿que desea comprar?: \nwhisky 1: $10000\nwhisky 2: $15000\nwhisky 3: $150000\nwhisky 4: $500000")
-//     }else{
-//         compra = "no"
-//     }
+                break
+            case "6":
 
-// }
+                break
+            case "7":
 
-class Producto {
-    constructor(obj) {
-        this.nombre = obj.nombre,
-        this.tipo = obj.tipo,
-        this.tamaño = parseInt(obj.tamaño),
-        this.precio = parceInt(obj.precio);
+                break
+            case "8":
+
+                break
+            case "9":
+
+                break
+            default:
+                alert("No es una opción válida")
+                selectSeccion = prompt("¡BIENVENIDO A LA TIENDA ONLINE DE DISTRIBUIDORA MASI! \n ¿Qué quieres hacer? \n 1. Ver todos los productos disponibles \n 2. Ver whiskis disponibles  \n 3. Ver vinos disponibles \n 4. Ver productos de cristaleria disponibles \n 5.Ordenar los productos por precio(Ascendente)\n 6. Ordenar los productos por precio(descendente) \n 7. Buscar productos \n 8. Comprar un producto \n 9. Salir")
+                break
+        }
     }
-    hablar () {
-        console.log("hola mi nombre es " + this.nombre)
-    }
-        cambiarNombre = (nuevoPrecio) => this.precio = nuevoPrecio
-    }
+}
 
-const BlueLabel750 = new Producto(
-    {
-        nombre: 'Johnnie Walker Blue Label',
-        tipo: 'whisky',
-        tamaño: 750,
-        precio: 91079
-    }
-)
+initProgram();
+
+//mostrar productos
+function
