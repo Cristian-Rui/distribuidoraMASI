@@ -70,3 +70,16 @@ main {
 .beneficios__home div {
     height: 20vh;
 }
+
+/* estilos del footer */
+footer {
+    background-color: #EEEEEE;
+    height: 40vh;
+    padding: 0px 20px;
+}
+
+.menu-footer li a {
+    color: black;
+
+}
+
