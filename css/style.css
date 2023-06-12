@@ -1,85 +1,93 @@
-/* estilos generales */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 html {
-    font-size: 16px;
-    font-family: 'Prompt', sans-serif;
-    font-weight: 400;
+  font-size: 16px;
+  font-family: "Prompt", sans-serif;
+  font-weight: 400;
 }
 
 a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 ul {
-    list-style: none;
+  list-style: none;
 }
 
 body {
-    background-color: #929AAB;
+  background-color: #929AAB;
 }
 
 h1 {
-    font-size: 0rem;
-    height: 0px;
+  font-size: 0rem;
+  height: 0px;
 }
 
-/* estilos del header */
-header {
-    background-color: #EEEEEE;
+.header {
+  background-color: #EEEEEE;
 }
-
 .header__img {
-    height: 10vh;
-    width: auto;
+  height: 10vh;
+  width: auto;
 }
 
-
-
-/* estilos del main */
-main {
-    height: 100vh;
+.mensajeBienvenida {
+  height: 10vh;
+}
+.mensajeBienvenida__titulo {
+  font-weight: bold;
+  font-size: 2rem;
+  height: 10vh;
+  font-style: italic;
+  color: #393E46;
 }
 
-.mensaje_bienvenida {
-    height: 10vh;
-
+.beneficios {
+  background-color: #393E46;
+  height: 30vh;
+}
+.beneficios__texto {
+  font-style: italic;
+  color: #EEEEEE;
 }
 
-.mensaje_bienvenida h2 {
-    font-weight: 600;
-    font-size: 2rem;
-    height: 10vh;
-    font-style: italic;
-    color: #393E46;
+.tarjeta {
+  width: 70%;
+  height: 25vh;
+  overflow: hidden;
+  position: relative;
+  padding: 0px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+.tarjeta:hover {
+  transform: scale(1.05);
+}
+.tarjeta__img {
+  width: 100%;
+  height: 175%;
+  object-fit: cover;
+  display: block;
+}
+.tarjeta__titulo {
+  font-size: 100%;
+  font-weight: bold;
+  color: #EEEEEE;
+  font-style: italic;
+  text-shadow: 0 0 8px black;
 }
 
-.card__home {
-    height: 30vh;
+.footer {
+  background-color: #EEEEEE;
+  height: 40vh;
+  padding: 0px 20px;
+}
+.footer__menu {
+  color: black;
 }
 
-.beneficios__home {
-    background-color: #393E46;
-
-}
-
-.beneficios__home div {
-    height: 20vh;
-}
-
-/* estilos del footer */
-footer {
-    background-color: #EEEEEE;
-    height: 40vh;
-    padding: 0px 20px;
-}
-
-.menu-footer li a {
-    color: black;
-
-}
-
+/*# sourceMappingURL=style.css.map */

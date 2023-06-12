@@ -1,0 +1,21 @@
+.mensajeBienvenida {
+    height: 10vh;
+
+    &__titulo {
+        font-weight: bold;
+        font-size: 2rem;
+        height: 10vh;
+        font-style: italic;
+        color:$color-3;
+    }
+}
+
+.beneficios {
+    background-color:$color-3;
+    height: 30vh;
+
+    &__texto {
+        font-style: italic;
+        color: $color-2;
+    }
+}

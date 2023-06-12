@@ -1,0 +1,60 @@
+@media(min-width:768px) {
+    .carrusel{
+        margin: 0px 60px;
+    }
+}
+
+.carrusel {
+    width: 100%;
+    margin: 0px 0px;
+
+    &__lista {
+        position: relative;
+        display: flex;
+        align-items: center;
+        width: fit-content;
+        height: 200px; 
+        padding: 10px 0px;
+        margin: 0px auto;
+        max-width: 90vw;
+        overflow: hidden;
+    }
+
+    &__track {
+        position: relative;
+        top: 0;
+        left: 0;
+        display: flex;
+        justify-content: center;
+        transition: .5s ease-in-out;
+    }
+
+    &__cards {
+        position: relative;
+        width: 210px;
+        padding: 0px 18px;
+        float: left;
+        display: flex;
+        height: 100%;
+
+        h3  {
+            position: absolute;
+            z-index: 1;
+            font-size: 1.5rem;
+            line-height: 23px;
+            color: $color-1;
+            padding: 15px;
+
+        }
+
+        a img {
+            object-fit: cover;
+            height: 300px;
+            width: 200px;
+        }
+    }
+
+}
+
+
+
