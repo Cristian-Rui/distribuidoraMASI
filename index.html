@@ -33,8 +33,17 @@
                             <li class="nav-item">
                                 <a class="nav-link text-center" href="./index.html">Inicio</a>
                             </li>
-                            <li class="nav-item">
-                                <a class="nav-link text-center" href="./pages/tienda.html">Tienda</a>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    Tienda
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Todos los productos</a></li>
+                                    <li><a class="dropdown-item" href="#">Whiskys</a></li>
+                                    <li><a class="dropdown-item" href="#">Vinos</a></li>
+                                    <li><a class="dropdown-item" href="#">Cristaleria</a></li>
+                                </ul>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link text-center" href="./pages/contacto.html">Contacto</a>
@@ -83,7 +92,8 @@
 
         <section class="beneficios container-fluid d-flex justify-content-center  py-4">
             <div class="row col-12">
-                <span class="col-6 d-flex justify-content-center align-items-center text-center beneficios__texto">ENVIOS
+                <span
+                    class="col-6 d-flex justify-content-center align-items-center text-center beneficios__texto">ENVIOS
                     A TODO EL PAÍS</span>
                 <span
                     class="col-6 d-flex justify-content-center align-items-center text-center beneficios__texto">PRODUCTOS
@@ -95,7 +105,7 @@
                     LAS 24HS</span>
             </div>
         </section>
-        
+
         <section class="container py-5">
             <div class="card">
                 <img src="./img/whiskyInicio.jpg" class="card-img-top" alt="whisky johnnie walker red label">
@@ -110,8 +120,10 @@
         </section>
         <section class=""></section>
         <section class="beneficios py-5 container-fluid d-flex justify-content-center">
-            <form action="" class="row d-flex flex-column align-items-center justify-content-center col-12 col-md-6 m-0 text-center">
-                <label for="novedades" class="beneficios__texto">Ingrese su email para recibir novedades sobre nosotros</label>
+            <form action=""
+                class="row d-flex flex-column align-items-center justify-content-center col-12 col-md-6 m-0 text-center">
+                <label for="novedades" class="beneficios__texto">Ingrese su email para recibir novedades sobre
+                    nosotros</label>
                 <input type="email" class="form-control my-3" id="novedades" placeholder="nombre@ejemplo.com">
                 <input type="submit" class="btn btn-light col-12 col-md-6" value="Recibir novedades">
             </form>
